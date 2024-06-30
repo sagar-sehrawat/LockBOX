@@ -7,6 +7,7 @@ Features:
     Encrypts files within a specified directory.
     Sends encrypted files and encryption keys to a specified server listener.
     Self-destruct feature: Deletes the script file and Key after execution.
+    #But work only Your local network either Victim and attacker
 
 Requirements
 
