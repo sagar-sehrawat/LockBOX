@@ -6,6 +6,13 @@ from cryptography.fernet import Fernet
 SERVER_HOST = '192.168.172.96'  # Replace with your server's IP address
 SERVER_PORT = 8888  # Choose any free port number
 
+class colors:
+    BLUE = '\033[94m'
+    RESET = '\033[0m'
+
+def print_colored(text, color):
+    print(f"{color}{text}{colors.RESET}")
+
 def print_banner():
     banner = """
 ██████╗ ███████╗███╗   ██╗███████╗███╗   ███╗ █████╗ ███╗   ██╗
