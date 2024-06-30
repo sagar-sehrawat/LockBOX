@@ -5,6 +5,32 @@ import time
 import random
 from cryptography.fernet import Fernet, InvalidToken
 
+class colors:
+    BLUE = '\033[94m'
+    RESET = '\033[0m'
+
+def print_colored(text, color):
+    print(f"{color}{text}{colors.RESET}")
+
+def print_banner():
+    banner = """
+██████╗ ███████╗███╗   ██╗███████╗███╗   ███╗ █████╗ ███╗   ██╗
+██╔══██╗██╔════╝████╗  ██║██╔════╝████╗ ████║██╔══██╗████╗  ██║
+██║  ██║█████╗  ██╔██╗ ██║█████╗  ██╔████╔██║███████║██╔██╗ ██║
+██║  ██║██╔══╝  ██║╚██╗██║██╔══╝  ██║╚██╔╝██║██╔══██║██║╚██╗██║
+██████╔╝███████╗██║ ╚████║███████╗██║ ╚═╝ ██║██║  ██║██║ ╚████║
+╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
+                                                                   
+             LockBox v1.0
+       ========================
+         Author: Sagar Sehrawat
+    """
+    # Print banner with blue color
+    print_colored(banner, colors.BLUE)
+
+if __name__ == "__main__":
+    print_banner()
+
 # ANSI escape sequences for colors
 class colors:
     RED = '\033[91m'
