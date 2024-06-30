@@ -31,6 +31,8 @@ To encrypt files in the current directory and send them to the server:
 
     python malware.py
 
+    Also set listener first
+
     FOR WINDOWS
 
     Download the Zip file and follow SAME STEPS:
