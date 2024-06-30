@@ -6,6 +6,22 @@ from cryptography.fernet import Fernet
 SERVER_HOST = '192.168.172.96'  # Replace with your server's IP address
 SERVER_PORT = 8888  # Choose any free port number
 
+def print_banner():
+    banner = """
+██████╗ ███████╗███╗   ██╗███████╗███╗   ███╗ █████╗ ███╗   ██╗
+██╔══██╗██╔════╝████╗  ██║██╔════╝████╗ ████║██╔══██╗████╗  ██║
+██║  ██║█████╗  ██╔██╗ ██║█████╗  ██╔████╔██║███████║██╔██╗ ██║
+██║  ██║██╔══╝  ██║╚██╗██║██╔══╝  ██║╚██╔╝██║██╔══██║██║╚██╗██║
+██████╔╝███████╗██║ ╚████║███████╗██║ ╚═╝ ██║██║  ██║██║ ╚████║
+╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
+                                                                   
+             LockBox v1.0
+       ========================
+         Author: Sagar Sehrawat
+    """
+    # Print banner with blue color
+    print_colored(banner, colors.BLUE)
+
 def receive_key():
     try:
         server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
