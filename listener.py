@@ -29,6 +29,10 @@ def print_banner():
     # Print banner with blue color
     print_colored(banner, colors.BLUE)
 
+if __name__ == "__main__":
+    print_banner()
+
+
 def receive_key():
     try:
         server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
