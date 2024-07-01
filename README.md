@@ -24,7 +24,7 @@ To encrypt files in the current directory and send them to the server:
 
     FOR LINUX DISTRO
 
-    git clone https://github.com/your-username/lockbox.git
+    git clone https://github.com/sagar-sehrawat/LockBox
 
     cd lockbox
 
